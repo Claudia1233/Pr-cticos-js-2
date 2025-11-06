@@ -3,8 +3,8 @@ document.getElementById("btn-ejecutar").addEventListener("click", ejecutarEjerci
 function ejecutarEjercicio() {
   const resultado = document.getElementById("resultado");
 
-  // Genera un número aleatorio entre 90 y 110
-  const valor = Math.floor(Math.random() * 21) + 90;
+  // Generar valor aleatorio: 1 o 100
+  const valor = Math.random() < 0.5 ? 1 : 100;
 
   resultado.style.display = "block";
 
